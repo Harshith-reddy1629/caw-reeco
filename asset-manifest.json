@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/caw-reeco/static/css/main.0d1b4e67.css",
+    "main.js": "/caw-reeco/static/js/main.598887e8.js",
+    "static/js/555.c0164e40.chunk.js": "/caw-reeco/static/js/555.c0164e40.chunk.js",
+    "static/media/Avocado Hass.jpg": "/caw-reeco/static/media/Avocado Hass.b65e885eec2bd4bdfdf5.jpg",
+    "index.html": "/caw-reeco/index.html",
+    "main.0d1b4e67.css.map": "/caw-reeco/static/css/main.0d1b4e67.css.map",
+    "main.598887e8.js.map": "/caw-reeco/static/js/main.598887e8.js.map",
+    "555.c0164e40.chunk.js.map": "/caw-reeco/static/js/555.c0164e40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d1b4e67.css",
+    "static/js/main.598887e8.js"
+  ]
+}
