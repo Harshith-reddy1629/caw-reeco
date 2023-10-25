@@ -9,6 +9,10 @@
   position: fixed;
   top: 0;
 }
+.popup-content {
+  width: 400px !important;
+  padding: 20px !important;
+}
 
 ::-webkit-scrollbar {
   width: 6px;

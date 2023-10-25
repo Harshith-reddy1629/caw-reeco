@@ -79,6 +79,7 @@ export const ItemsTable = styled.table`
   margin-top: 14px;
   border: 1px solid #ccc;
   border-radius: 15px;
+  overflow: hidden;
 `;
 export const ItemsTr = styled.tr`
   box-shadow: 0 -1px 0 0px inset #999;
@@ -104,8 +105,10 @@ export const ItemsTr = styled.tr`
     text-align: start;
   }
   :nth-child(6) {
-    text-align: start;
+    // text-align: start;
     width: 30%;
+    box-shadow: 0 -1px 0 0px inset #999;
+    background-color: #f9f9f9;
   }
 `;
 
@@ -122,4 +125,41 @@ export const ItemsTd = styled.td`
 export const ItemImg = styled.img`
   height: 45px;
   width: 45px !important;
+`;
+
+export const StatusApproveBtn = styled.button`
+  all: unset;
+  padding: 0;
+  width: 30px;
+  flex-grow: 0;
+`;
+
+export const StatSpan = styled.span`
+  color: #fff;
+  //   width: 300px;
+  text-align: center;
+  background-color: ${(props) => (props.ap === "true" ? "green" : "tomato")};
+  padding: 8px 5px;
+  border-radius: 18px;
+`;
+
+export const BtnsContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+`;
+
+export const YesNoBtns = styled.button`
+  all: unset;
+  margin-right: 18px;
+`;
+
+export const ClsBtn = styled.button`
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  border: 0;
+  outline: none;
+  border-radius: 12px;
+  background-color: lightblue;
 `;

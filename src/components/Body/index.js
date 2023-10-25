@@ -36,7 +36,7 @@ const Body = () => (
       <hr />
       <OrderStatusContainerList>
         <ListPText>Total</ListPText>
-        <ListHText>$ {"15"}</ListHText>
+        <ListHText>$ 1500</ListHText>
       </OrderStatusContainerList>{" "}
       <hr />
       <OrderStatusContainerList>
