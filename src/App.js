@@ -1,4 +1,3 @@
-// import logo from "./Assets/Apple Green Smith.png";
 import "./App.css";
 
 import Header from "./components/Header";
@@ -9,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+
       <OrderHeader />
 
       <Body />

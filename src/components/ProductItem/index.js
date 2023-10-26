@@ -15,6 +15,9 @@ import {
   BtnsContainer,
   YesNoBtns,
   ClsBtn,
+  TriggerBtn,
+  ProductItemName,
+  StatusSpan,
 } from "../Body/body.js";
 
 import Av from "../../Assets/Avocado Hass.jpg";
@@ -40,33 +43,17 @@ const ProductItem = ({ ProductName, brand }) => {
   return (
     <ItemsTr>
       <ItemsTd>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            width: "100%",
-            gap: "8px",
-          }}
-        >
+        <ProductItemName>
           <ItemImg src={Av} alt="item" />
           {ProductName}
-        </div>
+        </ProductItemName>
       </ItemsTd>
       <ItemsTd>{brand}</ItemsTd>
       <ItemsTd>${price} / 6*1LB</ItemsTd>
       <ItemsTd>{quantity} x 6*1LB </ItemsTd>
       <ItemsTd>${price * quantity}</ItemsTd>
       <ItemsTd>
-        <span
-          style={{
-            display: "flex",
-            height: "100%",
-            width: "100%",
-            justifyContent: "flex-end",
-            gap: "15px",
-            alignItems: "center",
-          }}
-        >
+        <StatusSpan>
           {!!stat && (
             <StatSpan ap={approval ? "true" : "false"}>{stat}</StatSpan>
           )}
@@ -83,20 +70,12 @@ const ProductItem = ({ ProductName, brand }) => {
               onClick={Approval}
               size={20}
             />
-            {/* <div className="popup-container"> */}
             <Popup
               modal
               trigger={
-                <button
-                  style={{
-                    all: "unset",
-
-                    width: "30%",
-                  }}
-                  type="button"
-                >
+                <TriggerBtn type="button">
                   <RxCross1 onClick={() => {}} size={18} />
-                </button>
+                </TriggerBtn>
               }
             >
               {(close) => (
@@ -113,7 +92,6 @@ const ProductItem = ({ ProductName, brand }) => {
                   <BtnsContainer>
                     <YesNoBtns
                       type="button"
-                      className="trigger-button"
                       onClick={() => {
                         DisApprove(false);
                         close();
@@ -123,7 +101,6 @@ const ProductItem = ({ ProductName, brand }) => {
                     </YesNoBtns>
                     <YesNoBtns
                       type="button"
-                      className="trigger-button"
                       onClick={() => {
                         DisApprove(true);
                         close();
@@ -135,11 +112,10 @@ const ProductItem = ({ ProductName, brand }) => {
                 </>
               )}
             </Popup>
-            {/* </div> */}
 
             <StatusApproveBtn>Edit</StatusApproveBtn>
           </div>
-        </span>
+        </StatusSpan>
       </ItemsTd>
     </ItemsTr>
   );

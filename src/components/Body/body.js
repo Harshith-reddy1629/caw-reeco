@@ -163,3 +163,24 @@ export const ClsBtn = styled.button`
   border-radius: 12px;
   background-color: lightblue;
 `;
+
+export const TriggerBtn = styled.button`
+  all: unset;
+  width: 30% !important;
+`;
+
+export const ProductItemName = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100% !important;
+  gap: 8px;
+`;
+
+export const StatusSpan = styled.span`
+  display: flex;
+  height: 100%;
+  width: 100% !important;
+  justify-content: flex-end;
+  gap: 15px;
+  align-items: center;
+`;
